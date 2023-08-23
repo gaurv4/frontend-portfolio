@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins&display=swap');
+
+:root {
+    --text-blue: #3D6EF7;
+    --text-fint-black: #323F4A;
+    --text-dark-black: #0E232E;
+    --main-bg-color: #EFF8FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+header {
+    background-color: transparent;
+    height: 110vh;
+    width: 100%;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    z-index: 100;
+}
+
+.logo {
+    height: 10vh;
+    width: 30vw;
+    padding: 20px 140px;
+    font-size: 22px;
+    font-weight: 800;
+    background-color: transparent;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--text-blue);
+}
+
+.nav_links {
+    height: 10vh;
+    width: 70vw;
+    background-color: transparent;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.nav_links li a {
+    color: var(--text-fint-black);
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    transition-duration: 0.1s;
+}
+
+.nav_links li a:hover {
+    color: var(--text-blue);
+    font-size: 17px;
+}
+
+.nav_social {
+    margin-top: 23px;
+}
+
+#nochange {
+    font-size: 27px;
+    transition-duration: 0.2s;
+    border-radius: 50px;
+}
+
+#nochange:hover {
+    font-size: 23px;
+    color: var(--text-blue);
+}
+
+.nav_social .change {
+    margin-left: 19px;
+    font-size: 27px;
+    transition-duration: 0.2s;
+    border-radius: 50px;
+}
+
+.nav_social a:hover {
+    font-size: 23px;
+    color: var(--text-blue);
+    border-color: var(--text-blue);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.home_content {
+    display: inline-block;
+    position: absolute;
+    width: 40%;
+    top: 16vh;
+    left: 140px;
+    letter-spacing: 1px;
+}
+
+.home_content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-fint-black);
+}
+
+.home_content h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.home_content .name {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ed9247;
+    text-shadow: 0 0 4px yellow;
+}
+
+.home_content h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--text-dark-black);
+}
+
+.home_content .text {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ab0c0f;
+    margin-left: 10px;
+    text-shadow: 0 0 1px rgb(246, 104, 104);
+}
+
+.home_content p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--text-blue);
+    color: var(--main-bg-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 17px;
+    letter-spacing: 1px;
+    border-color: var(--text-blue);
+}
+
+.btn:hover {
+    background-color: #436ad7;
+    box-shadow: 0 0 5px rgb(207, 234, 248),
+    0 0 17px rgb(142, 192, 240), 0 0 25px rgb(142, 192, 240),
+    0 0 50px rgb(142, 192, 240), 0 0 100px rgb(142, 192, 240)
+}
+
+.home img {
+    position: absolute;
+    top: 14vh;
+    left: 61vw;
+    width: auto;
+    height: 360px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--text-dark-black);
+}
+
+.home img:hover {
+    box-shadow: 0 0 5px rgb(207, 234, 248),
+    0 0 17px rgb(240, 201, 142), 0 0 25px rgb(240, 214, 142),
+    0 0 50px rgb(240, 214, 142), 0 0 100px rgb(240, 214, 142)
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.about .top {
+    text-align: center;
+    justify-content: space-between;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about .top .about-me {
+    color: #671685;
+}
+
+.about .main-about #profile-img img {
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    top: 20vh;
+    left: 20vw;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--text-dark-black);
+}
+
+.about .main-about #profile-img img:hover {
+    box-shadow: 0 0 5px rgb(207, 234, 248),
+    0 0 17px rgb(142, 192, 240), 0 0 25px rgb(142, 192, 240),
+    0 0 50px rgb(142, 192, 240), 0 0 100px rgb(142, 192, 240)
+}
+
+.about .main-about .about-text {
+    position: absolute;
+    left: 45vw;
+    top: 18vh;
+    width: 35vw;
+}
+
+.about .main-about .about-text .paragraph-1 {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.about .main-about .about-text .paragraph-2 {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.about .main-about .about-text .paragraph-3 {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.email, .place {
+    color: var(--text-blue);
+    font-size: 15px;
+
+}
+
+.email>span, .place>span {
+    color: var(--text-dark-black);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skills {
+    width: 100%;
+    height: 100vh;
+    background-color: #000030;
+}
+
+.topskills {
+    padding: 20px 0;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--main-bg-color);
+}
+
+
+.footer {
+    padding: 10px 100px;
+    background-color: black;
+  }
+  
+  .footer__container {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    color: white;
+  }
+  
+  .footer__col h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .footer__col h3 span {
+    color: white;
+  }
+  
+  .footer__col p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width: 300px;
+    transition: 0.3s;
+  }
+  
+  .footer__col p:hover {
+    color: rgba(255, 255, 255, 0.36);
+  }
+  
+  .footer__col p span {
+    font-weight: 600;
+  }
+  
+  .footer__col h4 {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .footer__bar {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    border-top: 1px solid var(--text-light);
+  }
+  
+  
+    .footer__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
