@@ -435,7 +435,7 @@ header {
   
   .footer__bar {
     max-width: var(--max-width);
-    margin-top: 12vh;
+    margin-top: 6.4vh;
     padding: 0.5rem;
     text-align: center;
     font-size: 0.8rem;
@@ -586,7 +586,7 @@ header {
     color: var(--text-fint-black);
 }
 
-..home-text ul li a:hover {
+.home-text ul li a:hover {
     font-size: 6vw;
 }
 
@@ -759,19 +759,24 @@ header {
     }
 
       .footer {
-        height: 65vh;
+        overflow-y: hidden;
+        height: 88vh;
         margin-left: -23vw;
       }
 
       .footer__col {
-        margin-top: -8vh;
+        margin-top: -4vh;
+      }
+
+      #footer-co2 {
+        margin-top: 0.1vh;
       }
       
       .footer__col h3 {
         width: 80vw;
         font-size: 5.4vw;
         font-weight: 900;
-        margin-bottom: 4vh;
+        margin-bottom: 2vh;
       }
       
       .footer__col h3 span {
@@ -782,6 +787,7 @@ header {
         font-size: 3vw;
         width: 70%;
         transition: 0.3s;
+        line-height: 2vh;
       }
       
       .footer__col>li>a:active {
@@ -799,7 +805,8 @@ header {
       
       .footer__bar {
         font-size: 3.3vw;
-        margin-left: 23.6vw;
+        margin-left: 23.3vw;
+        margin-bottom: 100vh;
       }
     
     .footer__col>li>a {
