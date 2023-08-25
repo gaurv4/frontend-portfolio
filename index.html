@@ -10,43 +10,53 @@
 
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
-            <div class="logo"> <a href="#">Portfolio.</a></div>
-            <div class="nav_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </div>
+            <div class="nav_bar">
+              <a href="#">Portfolio.</a>
+                <ul>
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#">Education</a></li>
+                  <li><a href="#">Experience</a></li>
+                  <li><a href="#">Work</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="mobile-nav">
+                  <i class="fa-solid fa-bars"></i>
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
         </nav>
-        <div class="home">
-            <div class="home_content">
+          <div class="home">
+            <div class="home-text">
                 <h3>Hello,</h3>
                 <h1>I'm <span class="name">Gaurav Mahajan</span></h1>
-                <h2>I Am Into </h2><span class="text"></span>
-                <h3>From India</h3>
+                <h2>I Am Into <span class="text"></span></h2>
+                <h4>From India</h4>
                 <p>I'm a Frontend web Developer, Expertise is to creat and Website Design, Frontend Design, and many more....</p>
-                <a href="#" class="btn">More about Me  <i class="fa-solid fa-circle-arrow-down"></i></a>
-                <div class="nav_social">
-                    <a href="#" id="nochange"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#" class="change"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" class="change"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="change"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="change"><i class="fa-brands fa-square-github"></i></a>
+                <div class="btn">
+                  <a href="#">More about Me <i class="fa-solid fa-circle-arrow-down"></i></a>
                 </div>
+                <ul>
+                  <li><a href="https://in.linkedin.com/in/gaurav-mahajan-832032257" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li><a href="#" class="change"><i class="fa-brands fa-twitter" target="_blank"></i></a></li>
+                  <li><a href="#" class="change"><i class="fa-brands fa-instagram" target="_blank"></i></a></li>
+                  <li><a href="#" class="change"><i class="fa-brands fa-facebook" target="_blank"></i></a></li>
+                  <li><a href="https://github.com/gaurv4" class="change" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+                </ul>  
             </div>
-            <img src="home.png" alt="profile img">
-        </div>
+              <div class="home-img">
+              <img src="home.png" alt="profile img">
+            </div>
+          </div>
     </header>
     <main>
-        <div class="about">
-            <div class="top"><i class="fa-solid fa-user"></i><span> About <span class="about-me">Me</span> </span></div>
+        <div class="about" id="about">
+            <div class="top"><i class="fa-solid fa-user"></i> About <span>Me</span></div>
             <div class="main-about">
-                <div id="profile-img">
+                <div class="about-img">
                     <img src="profile-img.jpg" alt="main profile img">
                 </div>
                 <div class="about-text">
@@ -55,31 +65,78 @@
                     <p class="paragraph-1">I'm a computer science major (Bachelor's Running). passion for Creating Web UI Designs & learnings New things.  have experience with several programming languages, including Java, Python, and SQL & Frontend Web technologies HTML5, CSS3, Javascript. I'm particularly interested in artificial intelligence and machine learning, and I'm currently working on a project that involves developing an AI-powered chatbot.</p>
                     <p class="paragraph-2">I learned a lot about software development & Web development processes and project management during that experience.</p>
                     <p class="paragraph-3">After graduation, I hope to work as a software engineer at a tech company, where I can continue to develop my skills and contribute to innovative projects. In my free time, I enjoy attending hackathons and learning about new technologies in the field</p>
+                    <div class="about-bottom">
+                      <a href="#"> Resume </a>
                     <p class="email">Email : <span>abc@xyz.com</span></p>
                     <p class="place">Place : <span>India</span></p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="skills">
+        <div class="skills" id="skills">
             <div class="topskills"><i class="fa-solid fa-code"></i><span> Skills </span></div>
-
+            <div class="skills-box">
+              <div class="skills-box-top">
+                <h1>What I do</h1>
+                <p>I am from india. I am doing Bachelor's in Computer Engineering and i will graduate in the year 2026. i am Frontend Developer and currently working as a Freelancer.</p>
+              </div>
+              <div class="skills-img">
+                <div class="top-block">
+                  <div class="html">
+                    <img src="skills-img/html.png" alt="">
+                    <p>HTML</p>
+                  </div>
+                  <div class="css">
+                    <img src="skills-img/css.png" alt="">
+                    <p>CSS</p>
+                  </div>
+                  <div class="sass">
+                    <img src="skills-img/sass.png" alt="">
+                    <p>SASS</p>
+                  </div>
+                  <div class="boot">
+                    <img src="skills-img/bootstrap.png" alt="">
+                    <p>BOOTSTRAP</p>
+                  </div>
+                </div>
+                <div class="bottom-block">
+                  <div class="js">
+                    <img src="skills-img/js.png" alt="">
+                    <p>JAVASCRIPT</p>
+                  </div>
+                  <div class="java">
+                    <img src="skills-img/java.png" alt="">
+                    <p>JAVA</p>
+                  </div>
+                  <div class="github">
+                    <img src="skills-img/github.png" alt="">
+                    <p>GITHUB</p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
         <div class="section__container footer__container">
           <div class="footer__col">
             <h3>Portfolio | ❤ Gaurav Mahajan</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis suscipit dolorem adipisci cumque doloribus magni voluptate, soluta nihil deleniti quam accusamus iusto eaque inventore voluptates quibusdam incidunt dolores alias accusantium.
+            </p>
           </div>
           <div class="footer__col">
             <h4>Quick Links</h4>
-            <p>Home</p>
-            <p>About</p>
-            <p>Skills</p>
-            <p>Education</p>
-            <p>Contact Us</p>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#">Experience</a></li>
           </div>
           <div class="footer__col">
-            <h4>Contact</h4>
+            <h4>Address</h4>
+            <p>
+              <span>Address:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quae.
+            </p>
             <p><span>Email:</span> abcd@xyz.com</p>
             <p><span>Phone:</span> +91 1234567890</p>
           </div>
