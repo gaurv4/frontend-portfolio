@@ -501,13 +501,14 @@ header {
     .nav_bar ul li a {
         font-size: 4.9vw;
         line-height: 4vh;
-        color: rgb(70, 70, 70);
+        text-shadow: 0 2.5px 7px #323F4A;
+        color: white;
     }
 
     .nav_bar ul li a:hover {
         color: white;
         font-size: 5.3vw;
-        text-shadow: 0 2.5px 7px #323F4A;
+        text-shadow: 0 2.5px 8px #323F4A;
     }
 
     .nav_bar ul li a:active {
