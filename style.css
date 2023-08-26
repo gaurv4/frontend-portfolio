@@ -69,7 +69,7 @@ header {
 }
 
 .mobile-navbar-btn {
-    display: non;
+    display: none;
     cursor: pointer;
     background-color: transparent;
 }
