@@ -68,11 +68,13 @@ header {
     color: var(--text-blue);
 }
 
-.mobile-nav {
-    background-color: brown;
-    width: 5vw;
-    margin-right: 5vw;
-    font-size: 1.5vw;
+.mobile-navbar-btn {
+    display: non;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.mobile-navbar-btn [name="close"] {
     display: none;
 }
 
@@ -375,7 +377,7 @@ header {
     display: flex;
     width: 35%;
     text-align: center;
-    margin: 3vw 33vw;
+    margin: 4vw 33vw;
 }
 
 .html, .css, .sass, .boot, .js, .java, .github {
@@ -463,29 +465,78 @@ header {
 
     html, body {
         overflow-x: hidden;
-        max-width: 100%;
     }
 
     header {
+        position: relative;
         height: 100vh;
     }
 
     .nav_bar {
         height: 6vh;
-        flex-direction: column;
+        padding-top: 1vh;
+        justify-content: flex-start;
     }
 
     .nav_bar>a {
-        font-size: 7vw;
+        font-size: 7.5vw;
         margin-left: 5vw;
     }
-
+      
     .nav_bar ul {
-        
+        position: absolute;
+        z-index: 99;
+        background-image: url(menu-bg.png);
+        flex-direction: column;
+        top: 0.5vh;
+        left: 25vw;
+        align-items: center;
+        width: 75vw;
+        height: 60vh;
+        transform: translateX(101%);
+        transition: all 0.5s linear;
+        border: 4px solid white;
     }
 
     .nav_bar ul li a {
-        font-size: 2.6vw;
+        font-size: 4.9vw;
+        line-height: 4vh;
+        color: rgb(70, 70, 70);
+    }
+
+    .nav_bar ul li a:hover {
+        color: white;
+        font-size: 5.3vw;
+        text-shadow: 0 2.5px 7px #323F4A;
+    }
+
+    .nav_bar ul li a:active {
+        color: white;
+        font-size: 5.3vw;
+        text-shadow: 0 2.5px 7px #323F4A;
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+        margin-left: 50vw;
+        font-size: 7vw;
+        color: var(--text-fint-black);
+    }
+
+    .active .nav_bar ul {
+        transform: translateX(0);
+
+    }
+
+    .active .nav_bar .mobile-navbar-btn .fa-bars {
+        display: none;
+    }
+
+    .active .nav_bar .mobile-navbar-btn .fa-xmark {
+        display: block;
+        font-size: 8vw;
+        color: var(--text-fint-black);
     }
 
     .home {
@@ -628,6 +679,7 @@ header {
         width: 100%;
         height: 54vh;
         margin-left: 7vw;
+        margin-top: 1.5vh;
         text-align: center;
     }
 
@@ -738,8 +790,9 @@ header {
     }
     
     .bottom-block {
-        width: 60%;
-        margin: 5vw 20vw;
+        width: 70%;
+        margin: 5vh 16vw;
+        gap: 5vw;
     }
     
     .html, .css, .sass, .boot, .js, .java, .github {
@@ -759,8 +812,7 @@ header {
     }
 
       .footer {
-        overflow-y: hidden;
-        height: 88vh;
+        height: 86vh;
         margin-left: -23vw;
       }
 
